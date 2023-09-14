@@ -1,5 +1,5 @@
 # SpringMVC
-#This is an advanced course on Java.
+# This is an advanced course on Java.
 #Course content includes: 
 ##JSP 
 ##Servlets 
