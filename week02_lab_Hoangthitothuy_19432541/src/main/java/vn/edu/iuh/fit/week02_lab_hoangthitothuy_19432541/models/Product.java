@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.week02_lab_hoangthitothuy_19432541.controllers;
+package vn.edu.iuh.fit.week02_lab_hoangthitothuy_19432541.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

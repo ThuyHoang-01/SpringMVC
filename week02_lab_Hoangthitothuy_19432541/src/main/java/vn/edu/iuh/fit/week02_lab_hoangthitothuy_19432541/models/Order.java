@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.week02_lab_hoangthitothuy_19432541.controllers;
+package vn.edu.iuh.fit.week02_lab_hoangthitothuy_19432541.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,17 +6,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.Date;
+
 @Entity
-@Table(name = "order_details")
+@Table(name = "order")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @ToString
-public class OrderDetails {
+public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int order_id;
-    private int product_id;
-    private int quantity;
-    private double price;
+    private Date order_date;
+    private int emp_id;
 }
