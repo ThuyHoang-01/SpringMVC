@@ -22,8 +22,29 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    compileOnly('jakarta.platform:jakarta.jakartaee-web-api:9.1.0')
+    //mariaDB
     implementation 'org.mariadb.jdbc:mariadb-java-client:3.2.0'
+    //lombok
+    compileOnly("org.projectlombok:lombok:1.18.20")
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    //hibernate
+    implementation('org.hibernate:hibernate-core:6.3.0.Final')
+
+    compileOnly('jakarta.platform:jakarta.jakartaee-web-api:10.0.0')
+
+
+    compileOnly('jakarta.servlet:jakarta.servlet-api:5.0.0')
+    compileOnly('jakarta.xml.ws:jakarta.xml.ws-api:3.0.1')
+
+    compileOnly('jakarta.platform:jakarta.jakartaee-api:9.1.0')
+    implementation('org.glassfish.jersey.containers:jersey-container-servlet:3.1.1')
+    implementation('org.glassfish.jersey.media:jersey-media-json-jackson:3.1.1')
+    implementation('org.glassfish.jersey.inject:jersey-hk2:3.1.1')
+    implementation('org.glassfish.jersey.core:jersey-client:3.1.1')
+
+
+
 
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")

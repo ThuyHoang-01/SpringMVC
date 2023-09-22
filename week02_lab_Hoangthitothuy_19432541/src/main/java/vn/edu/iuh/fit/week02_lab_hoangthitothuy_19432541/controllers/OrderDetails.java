@@ -1,20 +1,22 @@
 package vn.edu.iuh.fit.week02_lab_hoangthitothuy_19432541.controllers;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name = "order_details")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@ToString
 public class OrderDetails {
     @Id
-    private Long id;
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int order_id;
+    private int product_id;
+    private int quantity;
+    private double price;
 }

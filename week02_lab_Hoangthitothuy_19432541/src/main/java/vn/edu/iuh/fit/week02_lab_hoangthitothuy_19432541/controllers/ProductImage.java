@@ -1,21 +1,28 @@
 package vn.edu.iuh.fit.week02_lab_hoangthitothuy_19432541.controllers;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name = "product_image")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@ToString
 public class ProductImage {
 
     @Id
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private  int imgage_id;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private String path;
+    private String alternative;
 
-    public Long getId() {
-        return id;
-    }
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
+
 }
