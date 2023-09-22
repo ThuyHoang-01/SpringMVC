@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/webBanHangAPI-20230922T160309Z-001",
+    "last_opened_file_path": "D:/SpringMVC/week02_lab_Hoangthitothuy_19432541/src/main/java/vn/edu/iuh/fit/week02_lab_hoangthitothuy_19432541/resource",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,6 +57,11 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="vn.edu.iuh.fit.week02_lab_hoangthitothuy_19432541.controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SpringMVC\week02_lab_Hoangthitothuy_19432541\src\main\java\vn\edu\iuh\fit\week02_lab_hoangthitothuy_19432541\resource" />
+      <recent name="D:\SpringMVC\week02_lab_Hoangthitothuy_19432541\src\main\java\vn\edu\iuh\fit\week02_lab_hoangthitothuy_19432541\dao" />
+      <recent name="D:\SpringMVC\week02_lab_Hoangthitothuy_19432541\src\main\java\vn\edu\iuh\fit\week02_lab_hoangthitothuy_19432541\models" />
     </key>
   </component>
   <component name="RunManager">
@@ -91,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694828579151</updated>
       <workItem from="1694828580373" duration="1144000" />
-      <workItem from="1695402108728" duration="1134000" />
+      <workItem from="1695402108728" duration="1841000" />
     </task>
     <servers />
   </component>
