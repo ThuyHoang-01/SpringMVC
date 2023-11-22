@@ -20,12 +20,13 @@ targetCompatibility = '11'
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+hôm bữa t7 có tạo thử 1 file nhớ để nó ở đâu k ??
 
 dependencies {
     //mariaDB
     implementation 'org.mariadb.jdbc:mariadb-java-client:3.2.0'
     //lombok
-    compileOnly("org.projectlombok:lombok:1.18.20")
+    compileOnly("org.projectlombok:lombok:1.18.22")
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
 
     //hibernate
@@ -44,7 +45,8 @@ dependencies {
     implementation('org.glassfish.jersey.core:jersey-client:3.1.1')
 
 
-
+    implementation 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.0.0'
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
 
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")

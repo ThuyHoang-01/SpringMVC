@@ -42,19 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/SpringMVC/week02_lab_Hoangthitothuy_19432541/src/main/java/vn/edu/iuh/fit/week02_lab_hoangthitothuy_19432541/resource",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/manage/manage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="vn.edu.iuh.fit.week02_lab_hoangthitothuy_19432541.controllers" />
@@ -97,11 +98,23 @@
       <option name="presentableId" value="Default" />
       <updated>1694828579151</updated>
       <workItem from="1694828580373" duration="1144000" />
-      <workItem from="1695402108728" duration="2243000" />
+      <workItem from="1695402108728" duration="2419000" />
+      <workItem from="1696660035385" duration="1672000" />
+      <workItem from="1697210944902" duration="1173000" />
+      <workItem from="1697212767310" duration="69000" />
+      <workItem from="1697241415767" duration="881000" />
+      <workItem from="1697245251243" duration="77000" />
+      <workItem from="1697350370987" duration="862000" />
+      <workItem from="1697983414453" duration="704000" />
+      <workItem from="1697985485770" duration="294000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

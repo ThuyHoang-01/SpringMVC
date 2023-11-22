@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <form th:action="@{/employee/save}" method="post" th:object="${employee}">
+        <input type="hidden" name="emp_id" th:value="${emp.getEmp_id()}"/>
+        name: <input type="text" name="name" th:value="${emp.getName()}"/><br/>
+        email: <input type="text" name="email" th:value="${emp.getEmail()}"/><br/>
+        phone: <input type="text" name="phone" th:value="${emp.getPhone()}"/><br/>
+        address: <input type="text" name="address" th:value="${emp.getAddress()}"/><br/>
+        status: <select name="status">
+                    <option th:each="statusEm : ${T(vn.edu.iuh.fit.backend.enums.EmployeeStatusEnum).values()}"
+                            th:value="${statusEm}" th:text="${statusEm}" th:selected="${(statusEm.toString() == (emp.getStatus() != null ? emp.getStatus().toString() : ''))}"></option>
+                </select><br/>
+
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+
+</html>

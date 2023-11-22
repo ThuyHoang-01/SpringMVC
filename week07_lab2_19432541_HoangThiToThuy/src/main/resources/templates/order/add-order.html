@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <form th:action="@{/order/save}" method="post" th:object="${order}">
+        <input type="hidden" name="id" th:value="${ord.getOrder_id()}"/>
+        Order Date: <input type="text" name="orderDate" th:value="${ord.getOrderDate()}"/><br/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+
+</html>

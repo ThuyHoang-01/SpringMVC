@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="container">
+     <h1>Employees List</h1>
+    <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="employee : ${employees}">
+                <td th:text="${employee.emp_id}"></td>
+                <td th:text="${employee.name}"></td>
+                <td th:text="${employee.email}"></td>
+                <td th:text="${employee.phone}"></td>
+                <td th:text="${employee.status}"></td>
+                <td th:text="${employee.address}"></td>
+                <th>
+                    <a  th:href="@{/employee/update/{id}(id=${employee.emp_id})}" > Update </a>
+                    <a  th:href="@{/employee/delete/{id}(id=${employee.emp_id})}" > Delete </a>
+                </th>
+            </tbody>
+    </table>
+     <a class="btn btn-primary" th:href="@{/employee/add}" > Add </a>
+</body>
+</html>
