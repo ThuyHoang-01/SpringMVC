@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="container">
+<h1>Post List</h1>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>title</th>
+    <th>metaTitle</th>
+    <th>summary</th>
+    <th>published</th>
+    <th>createdAt</th>
+    <th>updatedAt</th>
+    <th>publishedAt</th>
+    <th>content</th>
+    <th>author</th>
+    <th>Action</th>
+
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr th:each="post : ${posts}">
+    <td th:text="*{post.getId()}"></td>
+    <td th:text="*{post.getTitle()}"></td>
+    <td th:text="*{post.getMetaTitle()}"></td>
+    <td th:text="*{post.getSummary()}"></td>
+    <td th:text="*{post.getPublished()}"></td>
+    <td th:text="*{post.getCreatedAt()}"></td>
+    <td th:text="*{post.getUpdatedAt()}"></td>
+    <td th:text="*{post.getPublishedAt()}"></td>
+    <td th:text="*{post.getContent()}"></td>
+    <td th:text="*{post.getAuthor().getEmail()}"></td>
+    <th>
+<!--      <a  th:href="@{/post/update/{id}(id=${employee.emp_id})}" > Update </a>-->
+      <a  th:href="@{/post/delete/{id}(id=${post.getId()})}" > Delete </a>
+    </th>
+  </tbody>
+</table>
+<a class="btn btn-primary" th:href="@{/post/add}" > Add </a>
+</body>
+</html>
