@@ -2,6 +2,8 @@ package vn.edu.iuh.backend.models;
 
 import jakarta.persistence.*;
 import lombok.*;
+import vn.edu.iuh.backend.enums.SkillLevel;
+import vn.edu.iuh.backend.ids.Job_SkillID;
 
 @Getter
 @Setter
@@ -10,7 +12,7 @@ import lombok.*;
 @ToString
 @Entity
 @Table(name = "job_skill")
-@IdClass(Job_skillID.class)
+@IdClass(Job_SkillID.class)
 public class Job_skill {
     @Id
     @ManyToOne

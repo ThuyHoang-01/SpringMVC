@@ -24,9 +24,7 @@ public class Address {
     private String stress;
     @Column(name = "city" , length = 50,  nullable = false)
     private String city;
-    //        @Enumerated(EnumType.STRING)
-//        @Column(name = "country" , length = 20,  nullable = false)
-//        private CountryCode country;
+
     @Column(name = "country",length = 20,nullable = false)
     private String country;
     @Column(name = "number" , length = 20,  nullable = false)
